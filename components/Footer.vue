@@ -38,7 +38,7 @@ export default {
                 </v-col>
             </v-row>
             <v-row justify="center" class="q-mb-xl">
-                <v-col class="v-col-auto q-mx-sm">
+                <v-col cols="auto" class="q-mx-sm">
                     <v-btn rounded="lg" href="https://directksa.go.link?adj_t=4bf1vwa" target="_blank" class="text-white" color="dark">
                         <strong>{{ $t('footer.appleStore') }}</strong>
                         <v-icon right class="pl-1">
@@ -46,7 +46,7 @@ export default {
                         </v-icon>
                     </v-btn>
                 </v-col>
-                <v-col class="v-col-auto q-mx-sm">
+                <v-col cols="auto" class="q-mx-sm">
                     <v-btn rounded="lg" href="https://directksa.go.link?adj_t=m9jduzd" target="_blank" class="text-white" color="dark">
                         <strong>{{ $t('footer.googlePlay') }}</strong>
                         <v-icon right class="pl-1">
@@ -56,14 +56,14 @@ export default {
                 </v-col>
             </v-row>
             <v-row justify="center" class="q-mb-lg">
-                <v-col class="v-col-auto" v-for="link in links" :key="link.href">
+                <v-col cols="auto" v-for="link in links" :key="link.href">
                     <v-btn variant="text" href="link.href" target="_blank" class="text-black" text>
                         {{ link.text }}
                     </v-btn>
                 </v-col>
             </v-row>
             <v-row justify="center" align="center" class="q-my-md q-px-md d-md-flex">
-                <v-col class="v-col-auto q-mx-sm" v-for="award in awards" :key="award.code">
+                <v-col cols="auto" class="q-mx-sm" v-for="award in awards" :key="award.code">
                     <img :src="award.icon" :class="award.width">
                 </v-col>
             </v-row>
@@ -73,7 +73,7 @@ export default {
                 </p>
             </v-row>
             <v-row justify="center" class="q-px-md">
-                <v-col class="v-col-auto" v-for="social in socials" :key="social.href">
+                <v-col cols="auto" v-for="social in socials" :key="social.href">
                     <v-btn variant="text" href="social.href" target="_blank" text icon>
                         <v-icon>
                             <img :src="social.icon" class="w-6">

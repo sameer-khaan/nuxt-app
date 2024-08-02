@@ -1,4 +1,8 @@
 {
+    "banner": {
+        "title": "Here you can find personalized offer for you",
+        "btnText": "Explore your personalized ticket"
+    },
     "footer": {
         "downloadApp": "Download our App Now!",
         "appleStore": "Apple Store",
