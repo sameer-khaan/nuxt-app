@@ -19,41 +19,46 @@ This is a Nuxt 3 application that utilizes Vuetify for UI components, Pinia for 
 
 ## Installation
 
-    1. Clone the repository:
+1. Clone the repository:
+
         git clone https://github.com/sameer-khaan/nuxt-app.git
         cd nuxt-app
 
-    2. Install dependencies:
+2. Install dependencies:
+        
         npm install
 
 ## Development
 
-    To start the development server:
-        npm run dev
+To start the development server:
 
-    The app will be available at http://localhost:3000.
+    npm run dev
+
+The app will be available at http://localhost:3000.
 
 
 ## Production
 
 To build and run the application in production mode, follow these steps:
 
-    1. Build the application:
+1. Build the application:
+
         npm run build
 
-    2. Start the production server:
+2. Start the production server:
+    
         npm run start
 
-    The app will be available at http://localhost:3000.
+The app will be available at http://localhost:3000.
 
 ## Configurations
 
 1. **Translations** are managed using JSON files located in the locales directory.
 
-        * English: locales/en.json
-        * Arabic: locales/ar.json
+* English: locales/en.json
+* Arabic: locales/ar.json
 
 2. **Dummy Data** are managed using JSON files located in the data directory.
 
-        * Flights List: data/flight.json
-        * Hotels List: data/hotel.json
+* Flights List: data/flight.json
+* Hotels List: data/hotel.json

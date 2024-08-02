@@ -9,15 +9,14 @@
         "googlePlay": "Google Play"
     },
     "search": {
-        "tripType": "Trip Type",
+        "title": "The lowest flight ticket price around the world",
+        "subTitle": "The perfect travel experience starts with Direct. Book your ticket now.",
         "oneWay": "One Way",
         "roundTrip": "Round Trip",
         "origin": "Origin",
         "destination": "Destination",
-        "departureDate": "Departure Date",
-        "returnDate": "Return Date",
-        "passengers": "Passengers",
-        "classType": "Class Type",
+        "departure": "Departure",
+        "return": "Return",
         "search": "Search"
     },
     "hotel": {

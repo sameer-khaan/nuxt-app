@@ -9,15 +9,14 @@
         "googlePlay": "جوجل بلاي"
     },
     "search": {
-        "tripType": "نوع الرحلة",
-        "oneWay": "اتجاه واحد",
+        "title": "أقل سعر لتذكرة الطيران حول العالم",
+        "subTitle": ".تبدأ تجربة السفر المثالية مع دايركت. احجز تذكرتك الآن",
+        "oneWay": "ذهاب فقط",
         "roundTrip": "ذهاب وعودة",
-        "origin": "الأصل",
-        "destination": "الوجهة",
-        "departureDate": "تاريخ المغادرة",
-        "returnDate": "تاريخ العودة",
-        "passengers": "الركاب",
-        "classType": "نوع الدرجة",
+        "origin": "من",
+        "destination": "إلى",
+        "departure": "المغادرة",
+        "return": "العودة",
         "search": "بحث"
     },
     "hotel": {
