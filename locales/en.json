@@ -1,0 +1,30 @@
+{
+    "footer": {
+        "downloadApp": "Download our App Now!",
+        "appleStore": "Apple Store",
+        "googlePlay": "Google Play"
+    },
+    "search": {
+        "tripType": "Trip Type",
+        "oneWay": "One Way",
+        "roundTrip": "Round Trip",
+        "origin": "Origin",
+        "destination": "Destination",
+        "departureDate": "Departure Date",
+        "returnDate": "Return Date",
+        "passengers": "Passengers",
+        "classType": "Class Type",
+        "search": "Search"
+    },
+    "hotel": {
+        "showOnMap": "Show On Map",
+        "good": "Good",
+        "reviews": "Reviews",
+        "nights": "Nights",
+        "adults": "Adults",
+        "taxes": "taxes and charges",
+        "selectRooms": "Select Rooms",
+        "breakfast": "Breakfast included",
+        "cardNeeded": "Credit Card Needed as Guarantee"
+    }
+}

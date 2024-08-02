@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Pearl Continental",
+        "location": "Dubai",
+        "roomType": "Deluxe Room - Non Smoking",
+        "roomLeft": 3,
+        "bedrooms": "1 extra-large room",
+        "beds": "2 comfortable beds",
+        "ratings": 4.8,
+        "prices": [
+            { "currency": "SAR", "amount": 500 },
+            { "currency": "USD", "amount": 150 }
+        ],
+        "tags": [
+            "Pay Later",
+            "Free Cancellation"
+        ],
+        "image": "/hotel/Pearl_Continental.jpg"
+    },
+    {
+        "name": "Hilton Hotel",
+        "location": "Doha",
+        "roomType": "Luxury Twin Suite",
+        "roomLeft": 2,
+        "bedrooms": "2 large double bed room",
+        "beds": "2 combine bed, 1 single bed",
+        "ratings": 4.9,
+        "prices": [
+            { "currency": "SAR", "amount": 750 },
+            { "currency": "USD", "amount": 200 }
+        ],
+        "tags": [
+            "Pay Later"
+        ],
+        "image": "/hotel/hilton-hotel.jpeg"
+    }
+]

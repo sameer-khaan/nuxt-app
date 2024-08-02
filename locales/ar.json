@@ -1,0 +1,30 @@
+{
+    "footer": {
+        "downloadApp": "حمل تطبيقنا الآن!",
+        "appleStore": "متجر أبل",
+        "googlePlay": "جوجل بلاي"
+    },
+    "search": {
+        "tripType": "نوع الرحلة",
+        "oneWay": "اتجاه واحد",
+        "roundTrip": "ذهاب وعودة",
+        "origin": "الأصل",
+        "destination": "الوجهة",
+        "departureDate": "تاريخ المغادرة",
+        "returnDate": "تاريخ العودة",
+        "passengers": "الركاب",
+        "classType": "نوع الدرجة",
+        "search": "بحث"
+    },
+    "hotel": {
+        "showOnMap": "عرض على الخريطة",
+        "good": "جيد",
+        "reviews": "مراجعات",
+        "nights": "ليالي",
+        "adults": "البالغون",
+        "taxes": "الضرائب والرسوم",
+        "selectRooms": "اختر غرفة",
+        "breakfast": "الإفطار مشمول",
+        "cardNeeded": "بطاقة ائتمان مطلوبة كضمان"
+    }
+}

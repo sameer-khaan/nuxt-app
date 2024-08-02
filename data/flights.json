@@ -1,0 +1,24 @@
+[
+    {
+        "airways": "Emirates",
+        "source": "Dubai (DXB)",
+        "destination": "New York (JFK)",
+        "duration": "14h 30m",
+        "time": "22:30",
+        "price": {
+            "economy": 1200,
+            "business": 3200
+        }
+    },
+    {
+        "airways": "Qatar Airways",
+        "source": "Doha (DOH)",
+        "destination": "London (LHR)",
+        "duration": "7h 45m",
+        "time": "08:15",
+        "price": {
+            "economy": 900,
+            "business": 2500
+        }
+    }
+]

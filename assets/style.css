@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.block {
+    display: block !important;
+}
+.fixed-top, .absolute-top {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.fixed-bottom, .absolute-bottom {
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.relative-position {
+    position: relative;
+}
+.row, .column, .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.items-center, .flex-center {
+    align-items: center;
+}
+.justify-center, .flex-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.self-stretch {
+    align-self: stretch;
+}
+.no-border {
+    border: 0 !important;
+}
+.text-center {
+    text-align: center;
+}
+.full-width {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.bg-dark {
+    background: #1d1d1d !important;
+}
+.text-theme {
+    color: #ff8000;
+}
+.capital-case {
+    text-transform: capitalize;
+}
+.on-left, .on-right {
+    margin-left: 12px;
+}
+.q-mx-sm {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.q-px-md {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.q-my-md {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.q-mb-sm {
+    margin-bottom: 8px;
+}
+.q-mb-lg {
+    margin-bottom: 24px;
+}
+.q-mb-xl {
+    margin-bottom: 48px;
+}
+.q-gutter-x-md, .q-gutter-md {
+    margin-left: -16px;
+}
+p {
+    margin: 0 0 16px;
+}
+.desktop-only{
+    display: none;
+}
+@media (min-width: 0) {
+    .col, .col-xs {
+        flex: 10000 1 0%;
+    }
+    .row>.col-12, .row>.col-xs-12 {
+        height: auto;
+        width: 100%;
+    }
+}
