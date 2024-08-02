@@ -1,5 +1,8 @@
 {
-  "name": "nuxt-app3",
+  "name": "nuxt-app",
+  "description": "Nuxt 3 - Single Page App",
+  "author": "Sameer Khan",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {

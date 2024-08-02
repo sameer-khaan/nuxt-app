@@ -2,8 +2,7 @@ import { createVuetify } from 'vuetify'
 import 'vuetify/styles'
 import '@mdi/font/css/materialdesignicons.css'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
-import { VApp, VAppBar, VMain, VContainer, VBtn, VIcon, VRow, VCol, VSelect, VMenu } from 'vuetify/components'
-import { VDatePicker } from 'vuetify/components/VDatePicker'
+import { VApp, VAppBar, VMain, VContainer, VBtn, VIcon, VRow, VCol, VSelect } from 'vuetify/components'
 
 export default defineNuxtPlugin((nuxtApp) => {
     const vuetify = createVuetify({
@@ -16,9 +15,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             VIcon,
             VRow,
             VCol,
-            VMenu,
-            VSelect,
-            VDatePicker
+            VSelect
         },
         icons: {
             defaultSet: 'mdi',

@@ -38,25 +38,6 @@
     const cityOptionsFrom = ['Karachi (KHI)', 'Lahore (LHR)', 'Islamabad (ISB)']
     const cityOptionsTo = ['Riyadh (RUH)', 'Jeddah (JED)', 'Dubai (DXB)']
 
-    const departureMenu = ref(false)
-    const returnMenu = ref(false)
-
-    const openMenu = (menu) => {
-        if (menu === 'departureMenu') {
-            departureMenu.value = true
-        } else if (menu === 'returnMenu') {
-            returnMenu.value = true
-        }
-    }
-
-    const closeMenu = (menu) => {
-        if (menu === 'departureMenu') {
-            departureMenu.value = false
-        } else if (menu === 'returnMenu') {
-            returnMenu.value = false
-        }
-    }
-
     const search = () => {
         const details = {
             tripType: tripType.value,
@@ -68,7 +49,6 @@
             classType: classType.value,
         }
         searchStore.setSearchDetails(details)
-        // Implement search functionality
     }
 </script>
 
@@ -91,12 +71,10 @@
                             </v-btn-toggle>
                         </v-col>
                         <v-col cols="12" sm="4" md="3" lg="2">
-                            <v-select v-model="passengers" :items="passengersOptions" variant="solo"
-                                density="compact"></v-select>
+                            <v-select v-model="passengers" :items="passengersOptions" variant="solo" density="compact"></v-select>
                         </v-col>
                         <v-col cols="12" sm="4" md="3" lg="2">
-                            <v-select v-model="classType" :items="flightOptions" variant="solo"
-                                density="compact"></v-select>
+                            <v-select v-model="classType" :items="flightOptions" variant="solo" density="compact"></v-select>
                         </v-col>
                     </v-row>
                     <v-row>
@@ -107,24 +85,10 @@
                             <v-select v-model="destination" :items="cityOptionsTo" class="bg-white" label="To" prepend-inner-icon="mdi-airplane-landing" variant="outlined" clearable></v-select>
                         </v-col>
                         <v-col cols="12" sm="6" md="2" class="p-0">
-                            <v-menu ref="departureMenu" v-model="departureMenu" :close-on-content-click="false" class="bg-white"
-                                :nudge-right="40" transition="scale-transition" offset-y min-width="auto">
-                                <template #activator="{ on, attrs }">
-                                    <v-text-field v-model="departureDate" label="Departure" prepend-inner-icon="mdi-calendar" 
-                                        readonly v-bind="attrs" v-on="on" @click="openMenu('departureMenu')"></v-text-field>
-                                </template>
-                                <v-date-picker v-model="departureDate" @input="closeMenu('departureMenu')"></v-date-picker>
-                            </v-menu>
+                            <v-text-field v-model="departureDate" label="Departure" prepend-inner-icon="mdi-calendar" variant="solo"></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="6" md="2" class="p-0">
-                            <v-menu ref="returnMenu" v-model="returnMenu" :close-on-content-click="false" class="bg-white"
-                                :nudge-right="40" transition="scale-transition" offset-y min-width="auto">
-                                <template #activator="{ on, attrs }">
-                                    <v-text-field v-model="returnDate" label="Return" prepend-inner-icon="mdi-calendar"
-                                        readonly v-bind="attrs" v-on="on" @click="openMenu('returnMenu')"></v-text-field>
-                                </template>
-                                <v-date-picker v-model="returnDate" @input="closeMenu('returnMenu')"></v-date-picker>
-                            </v-menu>
+                            <v-text-field v-model="returnDate" label="Return" prepend-inner-icon="mdi-calendar" variant="solo"></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="12" md="2" class="p-0">
                             <v-btn color="orange" class="search-button" @click="search">
