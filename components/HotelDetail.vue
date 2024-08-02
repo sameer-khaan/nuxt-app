@@ -1,38 +1,28 @@
-<script>
+<script setup>
+    import { computed } from 'vue'
     import { useHotelStore } from '~/stores/hotel'
     import { useMainStore } from '~/stores/main'
-    import { computed } from 'vue'
 
-    export default {
-        setup() {
-            const hotelStore = useHotelStore()
-            const mainStore = useMainStore()
+    const hotelStore = useHotelStore()
+    const mainStore = useMainStore()
 
-            const hotels = hotelStore.allHotels
-            const currency = computed(() => mainStore.currency)
+    const hotels = hotelStore.allHotels
+    const currency = computed(() => mainStore.currency)
 
-            const getPrice = (prices) => {
-                const price = prices.find(p => p.currency === currency.value)
-                const tax = calTax(price)
-                return price ? `${(price.amount + tax)} ${price.currency}` : 0
-            }
+    const getPrice = (prices) => {
+        const price = prices.find(p => p.currency === currency.value)
+        const tax = calTax(price)
+        return price ? `${(price.amount + tax)} ${price.currency}` : 0
+    }
 
-            const calTax = (price) => {
-                const tax = (price.amount * 13) / 100
-                return tax
-            }
-
-            return {
-                hotels,
-                currency,
-                getPrice
-            }
-        }
+    const calTax = (price) => {
+        const tax = (price.amount * 13) / 100
+        return tax
     }
 </script>
 
 <template>
-    <v-container class="pt-10">
+    <v-container>
         <v-row v-for="(hotel, index) in hotels" :key="index" class="mb-4">
             <v-col cols="12">
                 <v-card elevated>

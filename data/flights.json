@@ -1,24 +1,68 @@
 [
     {
-        "airways": "Emirates",
-        "source": "Dubai (DXB)",
-        "destination": "New York (JFK)",
-        "duration": "14h 30m",
-        "time": "22:30",
+        "airways": "Pakistan International",
+        "source": "Karachi (KHI)",
+        "destination": "Riyadh (RUH)",
+        "outbound": {
+            "departureTime": "19:30",
+            "departureDate": "Sat, 03 Aug",
+            "arivalTime": "09:30",
+            "arivalDate": "Sun, 04 Aug",
+            "duration": "16h"
+        },
+        "inbound": {
+            "departureTime": "11:30",
+            "departureDate": "Wed, 07 Aug",
+            "arivalTime": "21:55",
+            "arivalDate": "Wed, 07 Aug",
+            "duration": "8h 25m"
+        },
         "price": {
-            "economy": 1200,
-            "business": 3200
+            "economy": [
+                { "currency": "SAR", "amount": 2280 },
+                { "currency": "USD", "amount": 450 }
+            ],
+            "business": [
+                { "currency": "SAR", "amount": 2880 },
+                { "currency": "USD", "amount": 950 }
+            ],
+            "firstClass": [
+                { "currency": "SAR", "amount": 3480 },
+                { "currency": "USD", "amount": 1250 }
+            ]
         }
     },
     {
         "airways": "Qatar Airways",
-        "source": "Doha (DOH)",
-        "destination": "London (LHR)",
-        "duration": "7h 45m",
-        "time": "08:15",
+        "source": "Karachi (KHI)",
+        "destination": "Riyadh (RUH)",
+        "outbound": {
+            "departureTime": "04:00",
+            "departureDate": "Sat, 03 Aug",
+            "arivalTime": "11:45",
+            "arivalDate": "Sun, 03 Aug",
+            "duration": "9h 45m"
+        },
+        "inbound": {
+            "departureTime": "14:40",
+            "departureDate": "Wed, 07 Aug",
+            "arivalTime": "01:45",
+            "arivalDate": "Thu, 08 Aug",
+            "duration": "9h 5m"
+        },
         "price": {
-            "economy": 900,
-            "business": 2500
+            "economy": [
+                { "currency": "SAR", "amount": 2335 },
+                { "currency": "USD", "amount": 555 }
+            ],
+            "business": [
+                { "currency": "SAR", "amount": 2945 },
+                { "currency": "USD", "amount": 955 }
+            ],
+            "firstClass": [
+                { "currency": "SAR", "amount": 3645 },
+                { "currency": "USD", "amount": 1325 }
+            ]
         }
     }
 ]

@@ -1,32 +1,26 @@
-<script>
-export default {
-    data() {
-        return {
-            links: [
-                { text: 'Branches', href: 'https://visa.directksa.com/website/contact?lang=en' },
-                { text: 'About Us', href: 'https://visa.directksa.com/website/about?lang=en' },
-                { text: 'Contact Us', href: 'https://visa.directksa.com/website/contact?lang=en' },
-                { text: 'Track My Request', href: 'https://visa.directksa.com/website/track?lang=en' },
-                { text: 'FAQs', href: 'https://visa.directksa.com/website/faq?lang=en' },
-                { text: 'Terms & Conditions', href: 'https://visa.directksa.com/website/terms?lang=en' },
-            ],
-            awards: [
-                { code: '1', icon: 'https://assets.directksa.com/awards/gptw.png', width: 'w-14' },
-                { code: '2', icon: 'https://assets.directksa.com/awards/wta2023.png', width: 'w-16' },
-                { code: '3', icon: 'https://assets.directksa.com/awards/wta2024.png', width: 'w-16' },
-                { code: '4', icon: 'https://assets.directksa.com/awards/isologo.jpeg', width: 'w-24' },
-                { code: '5', icon: 'https://assets.directksa.com/awards/icef.png', width: 'w-20' },
-            ],
-            socials: [
-                { href: 'https://twitter.com/directksa_', icon: '/svgs/x.svg' },
-                { href: 'https://www.facebook.com/DirectKS0A', icon: '/svgs/facebook.svg' },
-                { href: 'https://www.instagram.com/directksa_', icon: '/svgs/instagram.svg' },
-                { href: 'https://www.youtube.com/channel/UCUU8ulLEM4WFK103RZyPcgg', icon: '/svgs/youtube.svg' },
-                { href: 'https://www.snapchat.com/add/direct-ksa?share_id=PsDqfmLVTgGfW1QIZgMrrQ&locale=en_US', icon: '/svgs/snapchat.svg' },
-            ],
-        }
-    },
-}
+<script setup>
+    const links = ref([
+        { text: 'Branches', href: 'https://visa.directksa.com/website/contact?lang=en' },
+        { text: 'About Us', href: 'https://visa.directksa.com/website/about?lang=en' },
+        { text: 'Contact Us', href: 'https://visa.directksa.com/website/contact?lang=en' },
+        { text: 'Track My Request', href: 'https://visa.directksa.com/website/track?lang=en' },
+        { text: 'FAQs', href: 'https://visa.directksa.com/website/faq?lang=en' },
+        { text: 'Terms & Conditions', href: 'https://visa.directksa.com/website/terms?lang=en' },
+    ])
+    const awards = ref([
+        { code: '1', icon: 'https://assets.directksa.com/awards/gptw.png', width: 'w-14' },
+        { code: '2', icon: 'https://assets.directksa.com/awards/wta2023.png', width: 'w-16' },
+        { code: '3', icon: 'https://assets.directksa.com/awards/wta2024.png', width: 'w-16' },
+        { code: '4', icon: 'https://assets.directksa.com/awards/isologo.jpeg', width: 'w-24' },
+        { code: '5', icon: 'https://assets.directksa.com/awards/icef.png', width: 'w-20' },
+    ])
+    const socials = ref([
+        { href: 'https://twitter.com/directksa_', icon: '/svgs/x.svg' },
+        { href: 'https://www.facebook.com/DirectKS0A', icon: '/svgs/facebook.svg' },
+        { href: 'https://www.instagram.com/directksa_', icon: '/svgs/instagram.svg' },
+        { href: 'https://www.youtube.com/channel/UCUU8ulLEM4WFK103RZyPcgg', icon: '/svgs/youtube.svg' },
+        { href: 'https://www.snapchat.com/add/direct-ksa?share_id=PsDqfmLVTgGfW1QIZgMrrQ&locale=en_US', icon: '/svgs/snapchat.svg' },
+    ])
 </script>
 
 <template>

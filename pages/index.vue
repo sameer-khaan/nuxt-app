@@ -1,16 +1,16 @@
 <template>
     <Search @search="handleSearch" />
-    <Banner />
-    <!-- <FlightDetail v-if="showDetails" /> -->
-    <HotelDetail v-if="showDetails" />
+    <Banner v-if="showDetails" />
+    <Flight v-if="showDetails" />
+    <Hotel v-if="showDetails" />
 </template>
 
 <script setup>
     import { ref } from 'vue'
     import Search from '~/components/Search.vue'
     import Banner from '~/components/Banner.vue'
-    import FlightDetail from '~/components/FlightDetail.vue'
-    import HotelDetail from '~/components/HotelDetail.vue'
+    import Flight from '~/components/FlightDetail.vue'
+    import Hotel from '~/components/HotelDetail.vue'
 
     const showDetails = ref(true)
     const handleSearch = () => {

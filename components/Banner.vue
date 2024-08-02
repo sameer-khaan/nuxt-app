@@ -12,7 +12,7 @@
                 </v-btn>
             </v-col>
             <v-col cols="auto">
-                <img src="/explore-personalized-ticket-hand.webp">
+                <img src="/icons/explore-personalized-ticket-hand.webp">
             </v-col>
         </v-row>
     </v-container>

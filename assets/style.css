@@ -92,6 +92,10 @@ p {
 .desktop-only{
     display: none;
 }
+.v-container {
+    position: relative;
+    top: 20px;
+}
 @media (min-width: 0) {
     .col, .col-xs {
         flex: 10000 1 0%;
