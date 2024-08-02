@@ -33,10 +33,10 @@
         set: (value) => (searchStore.classType = value),
     })
 
-    const passengersOptions = ['1 Passenger', '2 Passengers', '3 Passengers', '4 Passengers']
-    const flightOptions = ['Economy', 'Business', 'First Class']
-    const cityOptionsFrom = ['Karachi (KHI)', 'Lahore (LHR)', 'Islamabad (ISB)']
-    const cityOptionsTo = ['Riyadh (RUH)', 'Jeddah (JED)', 'Dubai (DXB)']
+    const passengersOptions = searchStore.passengerOptions
+    const classTypeOptions = searchStore.classTypeOptions
+    const cityFrom = ['Karachi (KHI)', 'Lahore (LHR)', 'Islamabad (ISB)']
+    const cityTo = ['Riyadh (RUH)', 'Jeddah (JED)', 'Dubai (DXB)']
 
     const search = () => {
         const details = {
@@ -71,27 +71,27 @@
                             </v-btn-toggle>
                         </v-col>
                         <v-col cols="12" sm="4" md="3" lg="2">
-                            <v-select v-model="passengers" :items="passengersOptions" variant="solo" density="compact"></v-select>
+                            <v-select v-model="passengers" :items="passengersOptions" item-title="text" item-value="value" variant="solo" density="compact"></v-select>
                         </v-col>
                         <v-col cols="12" sm="4" md="3" lg="2">
-                            <v-select v-model="classType" :items="flightOptions" variant="solo" density="compact"></v-select>
+                            <v-select v-model="classType" :items="classTypeOptions" item-title="text" item-value="value" variant="solo" density="compact"></v-select>
                         </v-col>
                     </v-row>
                     <v-row>
-                        <v-col cols="12" sm="6" md="3" class="p-0">
-                            <v-select v-model="origin" :items="cityOptionsFrom" class="bg-white" :label="$t('search.origin')" prepend-inner-icon="mdi-airplane-takeoff" variant="outlined" clearable></v-select>
+                        <v-col cols="12" sm="6" md="3" class="col-p-0">
+                            <v-select v-model="origin" :items="cityFrom" class="bg-white" :label="$t('search.origin')" prepend-inner-icon="mdi-airplane-takeoff" variant="outlined" clearable></v-select>
                         </v-col>
-                        <v-col cols="12" sm="6" md="3" class="p-0">
-                            <v-select v-model="destination" :items="cityOptionsTo" class="bg-white" :label="$t('search.destination')" prepend-inner-icon="mdi-airplane-landing" variant="outlined" clearable></v-select>
+                        <v-col cols="12" sm="6" md="3" class="col-p-0">
+                            <v-select v-model="destination" :items="cityTo" class="bg-white" :label="$t('search.destination')" prepend-inner-icon="mdi-airplane-landing" variant="outlined" clearable></v-select>
                         </v-col>
-                        <v-col cols="12" sm="6" md="2" class="p-0">
-                            <v-text-field v-model="departureDate" :label="$t('search.departure')" prepend-inner-icon="mdi-calendar" variant="solo"></v-text-field>
+                        <v-col cols="12" sm="6" md="2" class="col-p-0">
+                            <v-text-field v-model="departureDate" :label="$t('search.departure')" prepend-inner-icon="mdi-calendar" variant="outlined" clearable></v-text-field>
                         </v-col>
-                        <v-col cols="12" sm="6" md="2" class="p-0">
-                            <v-text-field v-model="returnDate" :label="$t('search.return')" prepend-inner-icon="mdi-calendar" variant="solo"></v-text-field>
+                        <v-col cols="12" sm="6" md="2" class="col-p-0">
+                            <v-text-field v-model="returnDate" :label="$t('search.return')" prepend-inner-icon="mdi-calendar" variant="outlined" clearable></v-text-field>
                         </v-col>
-                        <v-col cols="12" sm="12" md="2" class="p-0">
-                            <v-btn color="orange" class="search-button" @click="search">
+                        <v-col cols="12" sm="12" md="2" class="col-p-0">
+                            <v-btn color="orange" height="55" class="search-button" @click="search">
                                 Search
                             </v-btn>
                         </v-col>

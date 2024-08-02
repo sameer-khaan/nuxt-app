@@ -7,7 +7,7 @@
     const { locale } = useI18n()
     const languages = ref(mainStore.AllLanguages)
     const currentLanguage = ref(mainStore.language)
-    watch(currentLanguage, async (newLanguage) => {
+    watch(currentLanguage, (newLanguage) => {
         mainStore.setLanguage(newLanguage)
         locale.value = newLanguage
     })

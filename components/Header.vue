@@ -3,7 +3,7 @@
     import CurrencySwitcher from './CurrencySwitcher.vue'
     import LanguageSwitcher from './LanguageSwitcher.vue'
 
-    const activeTab = ref(null)
+    const tab = ref(null)
     const links = ref([
         {
             text: 'Visas',
@@ -19,7 +19,6 @@
             text: 'Flights',
             href: 'https://flights.directksa.com?lang=en',
             icon: 'https://assets.directksa.com/cdn-cgi/image/format=auto/menu/flights.png',
-            activeTab: true
         },
         {
             text: 'Schools',
@@ -37,7 +36,7 @@
                 <img src="/icons/logo.jpeg" alt="Direct for Travel & Tourism" width="75" height="35" class="cursor-pointer">
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-tabs v-model="activeTab" class="desktop-only">
+            <v-tabs v-model="tab" class="desktop-only">
                 <v-tab v-for="link in links" :key="link.text" :href="link.href" target="_blank">
                     <v-icon left class="pr-1">
                         <img :src="link.icon" class="w-10">

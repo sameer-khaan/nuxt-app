@@ -1,22 +1,26 @@
 <script setup>
     import { computed } from 'vue'
     import { useHotelStore } from '~/stores/hotel'
+    import { useSearchStore } from '~/stores/search'
     import { useMainStore } from '~/stores/main'
 
     const hotelStore = useHotelStore()
+    const searchStore = useSearchStore()
     const mainStore = useMainStore()
 
     const hotels = hotelStore.allHotels
     const currency = computed(() => mainStore.currency)
+    const passengers = computed(() => searchStore.passengers)
 
     const getPrice = (prices) => {
         const price = prices.find(p => p.currency === currency.value)
-        const tax = calTax(price)
-        return price ? `${(price.amount + tax)} ${price.currency}` : 0
+        const total = (price.amount * passengers.value)
+        const tax = calcTax(total)
+        return total ? `${(total + tax)} ${price.currency}` : 0
     }
 
-    const calTax = (price) => {
-        const tax = (price.amount * 13) / 100
+    const calcTax = (total) => {
+        const tax = ((total * 13) / 100)
         return tax
     }
 </script>
@@ -80,7 +84,7 @@
                                     </div>
                                 </v-card-item>
                                 <v-card-item class="text-right">
-                                    <div class="text-xs text-gray-500 mb-1">5 {{ $t('hotel.nights') }}, 2 {{ $t('hotel.adults') }}</div>
+                                    <div class="text-xs text-gray-500 mb-1">5 {{ $t('hotel.nights') }}, {{ passengers }} {{ $t('hotel.adults') }}</div>
                                     <div class="text-2xl">{{ getPrice(hotel.prices) }}</div>
                                     <div class="text-xs text-gray-500 mb-1">+13% {{ $t('hotel.taxes') }}</div>
                                     <div>

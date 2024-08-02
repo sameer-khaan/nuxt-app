@@ -50,6 +50,17 @@ body {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+.col-px-0 {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.col-py-0 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+.col-p-0 {
+    padding: 0!important;
+}
 .bg-dark {
     background: #1d1d1d !important;
 }

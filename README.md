@@ -58,6 +58,7 @@ The app will be available at http://localhost:3000.
 * English: locales/en.json
 * Arabic: locales/ar.json
 
+
 2. **Dummy Data** are managed using JSON files located in the data directory.
 
 * Flights List: data/flight.json

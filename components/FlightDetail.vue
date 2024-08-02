@@ -1,24 +1,22 @@
 <script setup>
     import { computed } from 'vue'
     import { useFlightStore } from '~/stores/flight'
+    import { useSearchStore } from '~/stores/search'
     import { useMainStore } from '~/stores/main'
 
     const flightStore = useFlightStore()
+    const searchStore = useSearchStore()
     const mainStore = useMainStore()
 
     const flights = flightStore.allFlights
     const currency = computed(() => mainStore.currency)
+    const passengers = computed(() => searchStore.passengers)
+    const classType = computed(() => searchStore.classType)
 
     const getPrice = (prices) => {
-        const price = prices.find(p => p.currency === currency.value)
-        const tax = calTax(price)
-        return price ? `${(price.amount + tax)} ${price.currency}` : 0
+        const price = prices[classType.value].find(p => p.currency === currency.value);
+        return price ? `${(price.amount * passengers.value)} ${price.currency}` : 0
     };
-
-    const calTax = (price) => {
-        const tax = (price.amount * 13) / 100
-        return tax
-    }
 </script>
 
 <template>
@@ -28,7 +26,7 @@
                 <v-card elevated>
                     <v-row class="p-2">
                         <v-col cols="12">
-                            <v-card flat class="d-flex flex-column h-60 align-start justify-between">
+                            <v-card flat class="d-flex flex-column align-start justify-between">
                                 <v-card-title>{{ flight.airways }}</v-card-title>
                                 <v-card-subtitle>{{ flight.source }} - {{ flight.destination }}</v-card-subtitle>
                                 <v-card-item class="d-flex justify-between">
@@ -67,8 +65,7 @@
                                         </div>
                                     </div>
                                     <div class="price">
-                                        <span>{{ flight.price.economy[0].amount }} {{ flight.price.economy[0].currency
-                                            }}</span>
+                                        <span>{{ getPrice(flight.prices) }}</span>
                                         <v-btn color="orange">View details</v-btn>
                                     </div>
                                 </v-card-item>

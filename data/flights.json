@@ -17,14 +17,14 @@
             "arivalDate": "Wed, 07 Aug",
             "duration": "8h 25m"
         },
-        "price": {
+        "prices": {
             "economy": [
                 { "currency": "SAR", "amount": 2280 },
                 { "currency": "USD", "amount": 450 }
             ],
             "business": [
                 { "currency": "SAR", "amount": 2880 },
-                { "currency": "USD", "amount": 950 }
+                { "currency": "USD", "amount": 920 }
             ],
             "firstClass": [
                 { "currency": "SAR", "amount": 3480 },
@@ -50,14 +50,14 @@
             "arivalDate": "Thu, 08 Aug",
             "duration": "9h 5m"
         },
-        "price": {
+        "prices": {
             "economy": [
                 { "currency": "SAR", "amount": 2335 },
                 { "currency": "USD", "amount": 555 }
             ],
             "business": [
-                { "currency": "SAR", "amount": 2945 },
-                { "currency": "USD", "amount": 955 }
+                { "currency": "SAR", "amount": 2985 },
+                { "currency": "USD", "amount": 990 }
             ],
             "firstClass": [
                 { "currency": "SAR", "amount": 3645 },
