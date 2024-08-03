@@ -28,7 +28,7 @@
 <template>
     <v-container>
         <v-row class="justify-center">
-            <v-col cols="11" md="12" lg="11">
+            <v-col cols="11" md="12" lg="11" xl="10">
                 <v-row class="mb-6">
                     <v-col class="col-px-0">
                         <h2 class="text-1xl text-gray-500 font-medium"><strong class="text-2xl text-black">Karachi</strong> {{ hotels.length }} {{ $t('hotel.found') }}</h2>

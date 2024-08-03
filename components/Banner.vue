@@ -1,7 +1,7 @@
 <template>
     <v-container class="py-10">
         <v-row class="justify-center">
-            <v-col cols="11" md="12" lg="11">
+            <v-col cols="11" md="12" lg="11" xl="10">
                 <v-row class="justify-between">
                     <v-col cols="auto">
                         <div class="text-2xl mb-8">{{ $t('banner.title') }}</div>

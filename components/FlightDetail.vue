@@ -22,7 +22,7 @@
 <template>
     <v-container>
         <v-row class="justify-center">
-            <v-col cols="11" md="12" lg="11">
+            <v-col cols="11" md="12" lg="11" xl="10">
                 <v-row class="mb-6">
                     <v-col class="col-px-0">
                         <h2 class="text-2xl font-medium">{{ $t('flight.found') }} {{ flights.length }} {{ $t('flight.ticket') }}</h2>
