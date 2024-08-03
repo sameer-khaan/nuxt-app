@@ -92,7 +92,7 @@
                         </v-col>
                         <v-col cols="12" sm="12" md="2" class="col-p-0">
                             <v-btn color="orange" height="55" @click="search">
-                                <div class="text-white capital-case">Search</div>
+                                <div class="text-white capital-case">{{ $t('search.search') }}</div>
                             </v-btn>
                         </v-col>
                     </v-row>

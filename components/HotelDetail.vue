@@ -31,7 +31,7 @@
             <v-col cols="11" md="12" lg="11">
                 <v-row class="mb-6">
                     <v-col class="col-px-0">
-                        <h2 class="text-1xl text-gray-500 font-medium"><strong class="text-2xl text-black">Karachi</strong> {{ hotels.length }} properties found</h2>
+                        <h2 class="text-1xl text-gray-500 font-medium"><strong class="text-2xl text-black">Karachi</strong> {{ hotels.length }} {{ $t('hotel.found') }}</h2>
                     </v-col>
                 </v-row>
                 <v-row v-for="(hotel, index) in hotels" :key="index" class="mb-6">
@@ -56,7 +56,7 @@
                                                     <v-icon icon="mdi-star" color="#ffcd5c" />
                                                 </div>
                                             </div>
-                                            <v-card-item class="d-mobile">
+                                            <v-card-item class="px-0 pb-0 d-mobile">
                                                 <div class="d-flex gap-2 align-center">
                                                     <v-chip variant="elevated" color="#ff8000">
                                                         {{ hotel.ratings }}

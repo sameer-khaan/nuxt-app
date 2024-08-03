@@ -27,6 +27,7 @@
         "viewDetails": "View Details"
     },
     "hotel": {
+        "found": "properties found",
         "showOnMap": "Show On Map",
         "good": "Good",
         "reviews": "Reviews",

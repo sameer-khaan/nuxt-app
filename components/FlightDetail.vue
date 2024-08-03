@@ -25,7 +25,7 @@
             <v-col cols="11" md="12" lg="11">
                 <v-row class="mb-6">
                     <v-col class="col-px-0">
-                        <h2 class="text-2xl font-medium">{{ $t('flight.found') }} {{ flights.length }} {{ $t('flight.tickets') }}</h2>
+                        <h2 class="text-2xl font-medium">{{ $t('flight.found') }} {{ flights.length }} {{ $t('flight.ticket') }}</h2>
                     </v-col>
                 </v-row>
                 <v-row v-for="(flight, index) in flights" :key="index" class="mb-6">
