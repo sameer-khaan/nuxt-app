@@ -36,7 +36,7 @@
                 <img src="/icons/logo.jpeg" alt="Direct for Travel & Tourism" width="75" height="35" class="cursor-pointer">
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-tabs v-model="tab" class="desktop-only">
+            <v-tabs v-model="tab" class="h-mobile">
                 <v-tab v-for="link in links" :key="link.text" :href="link.href" target="_blank">
                     <v-icon left class="pr-1">
                         <img :src="link.icon" class="w-10">
@@ -45,8 +45,10 @@
                 </v-tab>
             </v-tabs>
             <v-spacer></v-spacer>
-            <CurrencySwitcher />
-            <LanguageSwitcher />
+            <v-toolbar-items>
+                <CurrencySwitcher />
+                <LanguageSwitcher />
+            </v-toolbar-items>
         </v-toolbar>
     </v-app-bar>
 </template>

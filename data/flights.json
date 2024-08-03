@@ -1,8 +1,8 @@
 [
     {
         "airways": "Pakistan International",
-        "source": "Karachi (KHI)",
-        "destination": "Riyadh (RUH)",
+        "origin": "KHI, Karachi",
+        "destination": "RUH, Riyadh",
         "outbound": {
             "departureTime": "19:30",
             "departureDate": "Sat, 03 Aug",
@@ -30,12 +30,13 @@
                 { "currency": "SAR", "amount": 3480 },
                 { "currency": "USD", "amount": 1250 }
             ]
-        }
+        },
+        "image": "/flight/PK.webp"
     },
     {
         "airways": "Qatar Airways",
-        "source": "Karachi (KHI)",
-        "destination": "Riyadh (RUH)",
+        "origin": "KHI, Karachi",
+        "destination": "RUH, Riyadh",
         "outbound": {
             "departureTime": "04:00",
             "departureDate": "Sat, 03 Aug",
@@ -63,6 +64,7 @@
                 { "currency": "SAR", "amount": 3645 },
                 { "currency": "USD", "amount": 1325 }
             ]
-        }
+        },
+        "image": "/flight/QR.webp"
     }
 ]
