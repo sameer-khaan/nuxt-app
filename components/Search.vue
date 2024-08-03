@@ -56,7 +56,7 @@
     <div class="search-container d-flex align-center justify-center h-100 py-10">
         <v-container>
             <v-row class="justify-center">
-                <v-col cols="11" md="12" lg="11">
+                <v-col cols="11" md="12" lg="11" xl="10">
                     <v-row>
                         <v-col class="text-center">
                             <h1 class="text-4xl text-gray-600 font-weight-bold my-4">{{ $t('search.title') }}</h1>
@@ -91,7 +91,7 @@
                             <v-text-field v-model="returnDate" :label="$t('search.return')" prepend-inner-icon="mdi-calendar" variant="outlined" clearable></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="12" md="2" class="col-p-0">
-                            <v-btn color="orange" height="55" @click="search">
+                            <v-btn block color="orange" height="55" @click="search">
                                 <div class="text-white capital-case">{{ $t('search.search') }}</div>
                             </v-btn>
                         </v-col>
